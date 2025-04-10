@@ -2,6 +2,7 @@
 # See license.txt
 
 # import frappe
+#just a placeholder
 from frappe.tests.utils import FrappeTestCase
 
 
