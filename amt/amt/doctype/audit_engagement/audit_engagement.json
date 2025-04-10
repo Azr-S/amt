@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-10 21:35:49.782319",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "amended_from",
+  "column_break_rxai",
+  "audit_client",
+  "details_section",
+  "start_date",
+  "end_date",
+  "engagement_date",
+  "status",
+  "column_break_lape",
+  "proposal",
+  "engagement_letter",
+  "scope_of_audit"
+ ],
+ "fields": [
+  {
+   "fieldname": "audit_client",
+   "fieldtype": "Link",
+   "label": "Audit Client",
+   "options": "Audit Client"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Audit Engagement",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_rxai",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "engagement_date",
+   "fieldtype": "Date",
+   "label": "Engagement Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nIn Progress\nCompleted"
+  },
+  {
+   "fieldname": "column_break_lape",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "proposal",
+   "fieldtype": "Attach",
+   "label": "Proposal"
+  },
+  {
+   "fieldname": "engagement_letter",
+   "fieldtype": "Attach",
+   "label": "Engagement Letter"
+  },
+  {
+   "fieldname": "scope_of_audit",
+   "fieldtype": "Small Text",
+   "label": "Scope of Audit ( Notes )"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Team Assignment",
+   "link_fieldname": "engagement"
+  }
+ ],
+ "modified": "2025-04-10 22:08:49.531078",
+ "modified_by": "Administrator",
+ "module": "Amt",
+ "name": "Audit Engagement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

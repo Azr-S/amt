@@ -1,0 +1,545 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-10 20:39:16.847828",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rwop",
+  "amended_from",
+  "audit_client",
+  "basic_identification_details_section",
+  "legal_entity_name",
+  "trade_license_number_cl_number",
+  "commercial_registration_cr_number",
+  "tax_identification_number_tin",
+  "entity_type",
+  "date_of_incorporation",
+  "country_of_incorporation",
+  "column_break_dmhh",
+  "registered_address",
+  "mailing_address",
+  "primary_contact_person",
+  "email",
+  "contact_number",
+  "ownership_tab",
+  "ownership_and_control_structure_section",
+  "is_part_of_group_company",
+  "parent_company_name",
+  "column_break_bbrp",
+  "group_structure_chart",
+  "ultimate_beneficial_owner_and_shareholder_details_section",
+  "table_dpmc",
+  "legal_tab",
+  "legal_and_regulatory_compliance_section",
+  "trade_license",
+  "trade_license_validity",
+  "aml_compliance_officer",
+  "aml_policy_available",
+  "fatca__crs_status",
+  "applicable_regulator",
+  "column_break_joix",
+  "cr_document",
+  "tax_card",
+  "banking_tab",
+  "banking_and_financial_info_section",
+  "primary_bank_name",
+  "iban__account_number",
+  "name_of_external_auditor",
+  "bank_country",
+  "column_break_fuhx",
+  "currency_of_fs",
+  "date_of_last_audit",
+  "accounting_framework_used",
+  "document",
+  "latest_fs",
+  "tax_tab",
+  "tax_compliance_history_section",
+  "tax_registration_status",
+  "date_of_tax_registration",
+  "last_tax_return_filed",
+  "type_of_tax_returns_filed",
+  "column_break_rkus",
+  "tax_penalty_history",
+  "tax_penalty_details",
+  "open_tax_litigations",
+  "open_tax_litigations_details",
+  "risk_tab",
+  "risk_assessment_and_classification_section",
+  "client_risk_rating",
+  "high_risk_sector",
+  "aml_screening_result",
+  "aml_policy",
+  "sanctions_screening",
+  "column_break_wmtd",
+  "reason_for_risk_rating",
+  "risk_document",
+  "activity_tab",
+  "business_activity_details_section",
+  "nature_of_business",
+  "description_of_activities",
+  "license_specific_activities",
+  "column_break_daqu",
+  "vat_registration",
+  "number_of_employees",
+  "turnover_range"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rwop",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "KYC",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "basic_identification_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Identification Details"
+  },
+  {
+   "fieldname": "legal_entity_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Legal Entity Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trade_license_number_cl_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trade License Number (CL Number)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "commercial_registration_cr_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Commercial Registration (CR) Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tax_identification_number_tin",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tax Identification Number (TIN)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "entity_type",
+   "fieldtype": "Data",
+   "label": "Entity Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_incorporation",
+   "fieldtype": "Date",
+   "label": "Date of Incorporation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "country_of_incorporation",
+   "fieldtype": "Link",
+   "label": "Country of Incorporation",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dmhh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "registered_address",
+   "fieldtype": "Small Text",
+   "label": "Registered Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mailing_address",
+   "fieldtype": "Small Text",
+   "label": "Mailing Address"
+  },
+  {
+   "fieldname": "primary_contact_person",
+   "fieldtype": "Data",
+   "label": "Primary Contact Person",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ownership_and_control_structure_section",
+   "fieldtype": "Section Break",
+   "label": "Ownership and Control Structure"
+  },
+  {
+   "fieldname": "parent_company_name",
+   "fieldtype": "Data",
+   "label": "Parent Company Name",
+   "mandatory_depends_on": "eval:doc.is_part_of_group_company==1"
+  },
+  {
+   "fieldname": "group_structure_chart",
+   "fieldtype": "Attach",
+   "label": "Group Structure Chart"
+  },
+  {
+   "fieldname": "column_break_bbrp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ultimate_beneficial_owner_and_shareholder_details_section",
+   "fieldtype": "Section Break",
+   "label": "Ultimate Beneficial Owner and Shareholder details"
+  },
+  {
+   "fieldname": "table_dpmc",
+   "fieldtype": "Table",
+   "options": "Ultimate Beneficial Owner"
+  },
+  {
+   "fieldname": "legal_and_regulatory_compliance_section",
+   "fieldtype": "Section Break",
+   "label": "Legal and Regulatory Compliance"
+  },
+  {
+   "fieldname": "trade_license_validity",
+   "fieldtype": "Date",
+   "label": "Trade License Validity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "aml_compliance_officer",
+   "fieldtype": "Data",
+   "label": "AML Compliance Officer"
+  },
+  {
+   "default": "0",
+   "fieldname": "aml_policy_available",
+   "fieldtype": "Check",
+   "label": "AML Policy Available"
+  },
+  {
+   "fieldname": "column_break_joix",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "trade_license",
+   "fieldtype": "Attach",
+   "label": "Trade License",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cr_document",
+   "fieldtype": "Attach",
+   "label": "CR Document",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tax_card",
+   "fieldtype": "Attach",
+   "label": "Tax Card",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "fatca__crs_status",
+   "fieldtype": "Check",
+   "label": "FATCA / CRS Status"
+  },
+  {
+   "fieldname": "applicable_regulator",
+   "fieldtype": "Select",
+   "label": "Applicable Regulator",
+   "options": "QFMA\nQFC\nMOCI\nQFZ\nQSTP\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "banking_and_financial_info_section",
+   "fieldtype": "Section Break",
+   "label": "Banking and Financial Info"
+  },
+  {
+   "fieldname": "primary_bank_name",
+   "fieldtype": "Data",
+   "label": "Primary Bank Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "iban__account_number",
+   "fieldtype": "Data",
+   "label": "IBAN / Account Number"
+  },
+  {
+   "fieldname": "bank_country",
+   "fieldtype": "Link",
+   "label": "Bank Country",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "currency_of_fs",
+   "fieldtype": "Link",
+   "label": "Currency of FS",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fuhx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_of_external_auditor",
+   "fieldtype": "Data",
+   "label": "Name of External Auditor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_last_audit",
+   "fieldtype": "Date",
+   "label": "Date of Last Audit"
+  },
+  {
+   "fieldname": "accounting_framework_used",
+   "fieldtype": "Data",
+   "label": "Accounting Framework Used"
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Attach",
+   "label": "Bank Document"
+  },
+  {
+   "fieldname": "tax_compliance_history_section",
+   "fieldtype": "Section Break",
+   "label": "Tax Compliance History"
+  },
+  {
+   "fieldname": "tax_registration_status",
+   "fieldtype": "Data",
+   "label": "Tax Registration Status"
+  },
+  {
+   "fieldname": "date_of_tax_registration",
+   "fieldtype": "Date",
+   "label": "Date of Tax Registration"
+  },
+  {
+   "fieldname": "last_tax_return_filed",
+   "fieldtype": "Data",
+   "label": "Last Tax Return Filed Period"
+  },
+  {
+   "fieldname": "type_of_tax_returns_filed",
+   "fieldtype": "Data",
+   "label": "Type of Tax Returns Filed"
+  },
+  {
+   "fieldname": "column_break_rkus",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "tax_penalty_history",
+   "fieldtype": "Check",
+   "label": "Tax Penalty History"
+  },
+  {
+   "fieldname": "tax_penalty_details",
+   "fieldtype": "Data",
+   "label": "Tax Penalty Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "open_tax_litigations",
+   "fieldtype": "Check",
+   "label": "Open Tax Litigations"
+  },
+  {
+   "fieldname": "open_tax_litigations_details",
+   "fieldtype": "Data",
+   "label": "Open Tax Litigations Details"
+  },
+  {
+   "fieldname": "business_activity_details_section",
+   "fieldtype": "Section Break",
+   "label": "Business Activity Details"
+  },
+  {
+   "fieldname": "nature_of_business",
+   "fieldtype": "Data",
+   "label": "Nature of Business"
+  },
+  {
+   "fieldname": "description_of_activities",
+   "fieldtype": "Data",
+   "label": "Description of Activities"
+  },
+  {
+   "fieldname": "vat_registration",
+   "fieldtype": "Data",
+   "label": "VAT Registration"
+  },
+  {
+   "fieldname": "license_specific_activities",
+   "fieldtype": "Data",
+   "label": "License Specific Activities"
+  },
+  {
+   "fieldname": "column_break_daqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number_of_employees",
+   "fieldtype": "Data",
+   "label": "Number of Employees"
+  },
+  {
+   "fieldname": "turnover_range",
+   "fieldtype": "Datetime",
+   "label": "Turnover Range"
+  },
+  {
+   "fieldname": "risk_assessment_and_classification_section",
+   "fieldtype": "Section Break",
+   "label": "Risk Assessment and Classification"
+  },
+  {
+   "fieldname": "client_risk_rating",
+   "fieldtype": "Select",
+   "label": "Client Risk Rating",
+   "options": "Low\nMedium\nHigh"
+  },
+  {
+   "default": "0",
+   "fieldname": "high_risk_sector",
+   "fieldtype": "Check",
+   "label": "High Risk Sector?"
+  },
+  {
+   "fieldname": "column_break_wmtd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reason_for_risk_rating",
+   "fieldtype": "Small Text",
+   "label": "Reason for Risk Rating"
+  },
+  {
+   "fieldname": "aml_screening_result",
+   "fieldtype": "Attach",
+   "label": "AML Screening Result"
+  },
+  {
+   "fieldname": "sanctions_screening",
+   "fieldtype": "Select",
+   "label": "Sanctions Screening",
+   "options": "Passed\nFlagged"
+  },
+  {
+   "fieldname": "risk_document",
+   "fieldtype": "Attach",
+   "label": "Risk Analysis WP"
+  },
+  {
+   "fieldname": "latest_fs",
+   "fieldtype": "Attach",
+   "label": "Latest FS"
+  },
+  {
+   "fieldname": "aml_policy",
+   "fieldtype": "Attach",
+   "label": "AML Policy"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_part_of_group_company",
+   "fieldtype": "Check",
+   "label": "Is part of group company"
+  },
+  {
+   "fieldname": "ownership_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ownership"
+  },
+  {
+   "fieldname": "legal_tab",
+   "fieldtype": "Tab Break",
+   "label": "Legal"
+  },
+  {
+   "fieldname": "banking_tab",
+   "fieldtype": "Tab Break",
+   "label": "Banking"
+  },
+  {
+   "fieldname": "tax_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tax"
+  },
+  {
+   "fieldname": "activity_tab",
+   "fieldtype": "Tab Break",
+   "label": "Activity"
+  },
+  {
+   "fieldname": "risk_tab",
+   "fieldtype": "Tab Break",
+   "label": "Risk"
+  },
+  {
+   "fieldname": "audit_client",
+   "fieldtype": "Link",
+   "label": "Audit Client",
+   "options": "Audit Client"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-10 21:32:00.353522",
+ "modified_by": "Administrator",
+ "module": "Amt",
+ "name": "KYC",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
