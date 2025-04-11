@@ -13,10 +13,13 @@
   "end_date",
   "engagement_date",
   "status",
+  "financial_year",
   "column_break_lape",
   "proposal",
   "engagement_letter",
-  "scope_of_audit"
+  "scope_of_audit",
+  "admin_section",
+  "audit_configuration"
  ],
  "fields": [
   {
@@ -83,6 +86,22 @@
    "fieldname": "scope_of_audit",
    "fieldtype": "Small Text",
    "label": "Scope of Audit ( Notes )"
+  },
+  {
+   "fieldname": "admin_section",
+   "fieldtype": "Section Break",
+   "label": "Admin"
+  },
+  {
+   "fieldname": "audit_configuration",
+   "fieldtype": "Link",
+   "label": "Audit Configuration",
+   "options": "Audit Stage Configuration"
+  },
+  {
+   "fieldname": "financial_year",
+   "fieldtype": "Data",
+   "label": "Financial Year"
   }
  ],
  "grid_page_length": 50,
@@ -92,9 +111,13 @@
   {
    "link_doctype": "Team Assignment",
    "link_fieldname": "engagement"
+  },
+  {
+   "link_doctype": "Audit Task",
+   "link_fieldname": "audit_engagement"
   }
  ],
- "modified": "2025-04-10 22:08:49.531078",
+ "modified": "2025-04-11 14:39:38.225500",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "Audit Engagement",

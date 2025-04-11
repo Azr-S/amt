@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-04-11 10:31:09.450127",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task_name",
+  "critical_path",
+  "duration_days",
+  "column_break_bnlf",
+  "assigned_role",
+  "weight",
+  "column_break_sdzg",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Task Name"
+  },
+  {
+   "fieldname": "assigned_role",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Responsible Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "duration_days",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Duration (Days)"
+  },
+  {
+   "default": "0",
+   "fieldname": "critical_path",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Critical Path?"
+  },
+  {
+   "fieldname": "column_break_bnlf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sdzg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Data",
+   "label": "Weight"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-11 14:36:54.534496",
+ "modified_by": "Administrator",
+ "module": "Amt",
+ "name": "Audit Task Template",
+ "naming_rule": "Autoincrement",
+ "nsm_parent_field": "parent_audit_task_template",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "task_name",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "task_name",
+ "track_changes": 1
+}

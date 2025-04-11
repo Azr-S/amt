@@ -1,0 +1,184 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-11 14:23:09.252747",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "engagement_details_section",
+  "audit_engagement",
+  "column_break_vtzz",
+  "client",
+  "task_details_section",
+  "task_name",
+  "responsible_role",
+  "critical_path",
+  "standard_duration_days",
+  "column_break_rcim",
+  "description",
+  "amended_from",
+  "work_updates_section",
+  "expected_start_date",
+  "expected_end_date",
+  "expected_time_in_hours",
+  "column_break_lzcr",
+  "notes",
+  "findings_section",
+  "table_qaxg",
+  "working_papers_section",
+  "table_bvoc"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Audit Task",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "task_name",
+   "fieldtype": "Link",
+   "label": "Task Name",
+   "options": "Audit Task Template"
+  },
+  {
+   "fetch_from": "task_name.assigned_role",
+   "fieldname": "responsible_role",
+   "fieldtype": "Data",
+   "label": "Responsible Role"
+  },
+  {
+   "default": "0",
+   "fieldname": "critical_path",
+   "fieldtype": "Check",
+   "label": "Critical Path"
+  },
+  {
+   "fieldname": "column_break_rcim",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "task_name.description",
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fetch_from": "task_name.duration_days",
+   "fetch_if_empty": 1,
+   "fieldname": "standard_duration_days",
+   "fieldtype": "Duration",
+   "label": "Standard Duration (Days)"
+  },
+  {
+   "fieldname": "task_details_section",
+   "fieldtype": "Section Break",
+   "label": "Task Details"
+  },
+  {
+   "fieldname": "engagement_details_section",
+   "fieldtype": "Section Break",
+   "label": "Engagement Details"
+  },
+  {
+   "fieldname": "audit_engagement",
+   "fieldtype": "Link",
+   "label": "Audit Engagement",
+   "options": "Audit Engagement"
+  },
+  {
+   "fetch_from": "audit_engagement.audit_client",
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Audit Client"
+  },
+  {
+   "fieldname": "column_break_vtzz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "working_papers_section",
+   "fieldtype": "Section Break",
+   "label": "Working Papers"
+  },
+  {
+   "fieldname": "table_bvoc",
+   "fieldtype": "Table",
+   "options": "Audit Attachment"
+  },
+  {
+   "fieldname": "work_updates_section",
+   "fieldtype": "Section Break",
+   "label": "Work Updates"
+  },
+  {
+   "fieldname": "expected_start_date",
+   "fieldtype": "Date",
+   "label": "Expected Start Date"
+  },
+  {
+   "fieldname": "expected_end_date",
+   "fieldtype": "Date",
+   "label": "Expected End Date"
+  },
+  {
+   "fieldname": "expected_time_in_hours",
+   "fieldtype": "Data",
+   "label": "Expected Time (in hours)"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Findings and Notes"
+  },
+  {
+   "fieldname": "column_break_lzcr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "findings_section",
+   "fieldtype": "Section Break",
+   "label": "Findings"
+  },
+  {
+   "fieldname": "table_qaxg",
+   "fieldtype": "Table",
+   "options": "Audit Findings"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-11 14:43:31.947928",
+ "modified_by": "Administrator",
+ "module": "Amt",
+ "name": "Audit Task",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

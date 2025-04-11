@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-11 13:42:42.355794",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "audit_task",
+  "column_break_plmt",
+  "responsible_person",
+  "column_break_pdal",
+  "description",
+  "critical_path"
+ ],
+ "fields": [
+  {
+   "fieldname": "audit_task",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Audit Task",
+   "options": "Audit Task Template"
+  },
+  {
+   "fetch_from": "audit_task.assigned_role",
+   "fieldname": "responsible_person",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Responsible Person"
+  },
+  {
+   "fetch_from": "audit_task.description",
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fetch_from": "audit_task.critical_path",
+   "fieldname": "critical_path",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Critical Path"
+  },
+  {
+   "fieldname": "column_break_plmt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pdal",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-11 13:45:17.885447",
+ "modified_by": "Administrator",
+ "module": "Amt",
+ "name": "Audit Tasks Under Audit Stage",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

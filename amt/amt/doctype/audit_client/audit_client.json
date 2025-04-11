@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{customer_reference}-{##}",
  "creation": "2025-04-10 20:18:17.404884",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -81,10 +82,11 @@
    "link_fieldname": "audit_client"
   }
  ],
- "modified": "2025-04-10 22:08:53.729263",
+ "modified": "2025-04-11 14:50:09.122460",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "Audit Client",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

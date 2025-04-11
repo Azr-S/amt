@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-11 14:33:06.775634",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "attach",
+  "url",
+  "description_or_findings"
+ ],
+ "fields": [
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attach"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "URL"
+  },
+  {
+   "fieldname": "description_or_findings",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description or Findings"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-11 14:34:13.448053",
+ "modified_by": "Administrator",
+ "module": "Amt",
+ "name": "Audit Attachment",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
