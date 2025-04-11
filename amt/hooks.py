@@ -8,6 +8,30 @@ app_license = "mit"
 # Apps
 # ------------------
 
+fixtures = [
+    {
+        "doctype": "Workflow",
+        "filters": [["name", "in", [
+            "Audit Task Workflow 1",
+            "Audit Task Workflow 2 - with condition"
+        ]]]
+    },
+    "Workflow State",
+    "Workflow Action Master",
+    {
+        "doctype": "Role",
+        "filters": [["name", "in", [
+            "Audit Manager",
+            "Engagement Partner",
+            "Engagement Manager",
+            "Audit Senior",
+            "Tax Reviewer",
+            "Audit Staff"
+        ]]]
+    }
+]
+
+
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page

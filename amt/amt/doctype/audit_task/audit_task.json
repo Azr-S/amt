@@ -14,9 +14,11 @@
   "task_name",
   "responsible_role",
   "critical_path",
-  "standard_duration_days",
+  "approval_level",
+  "order",
   "column_break_rcim",
   "description",
+  "standard_duration_days",
   "amended_from",
   "work_updates_section",
   "expected_start_date",
@@ -152,13 +154,25 @@
    "fieldname": "table_qaxg",
    "fieldtype": "Table",
    "options": "Audit Findings"
+  },
+  {
+   "fetch_from": "task_name.approval_level",
+   "fieldname": "approval_level",
+   "fieldtype": "Data",
+   "label": "Approval Level"
+  },
+  {
+   "fetch_from": "task_name.order",
+   "fieldname": "order",
+   "fieldtype": "Data",
+   "label": "Order"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-04-11 19:00:03.673487",
+ "modified": "2025-04-11 21:43:42.520126",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "Audit Task",
@@ -176,6 +190,78 @@
    "role": "System Manager",
    "share": 1,
    "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Audit Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Engagement Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Engagement Partner",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Audit Senior",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Audit Staff",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tax Reviewer",
+   "share": 1,
    "write": 1
   }
  ],

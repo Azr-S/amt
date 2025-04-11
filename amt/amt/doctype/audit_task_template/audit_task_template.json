@@ -9,9 +9,11 @@
   "task_name",
   "critical_path",
   "duration_days",
+  "order",
   "column_break_bnlf",
   "assigned_role",
   "weight",
+  "approval_level",
   "column_break_sdzg",
   "description",
   "lft",
@@ -29,10 +31,10 @@
   },
   {
    "fieldname": "assigned_role",
-   "fieldtype": "Link",
+   "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Responsible Role",
-   "options": "Role"
+   "options": "Audit Manager\nEngagement Partner\nEngagement Manager\nAudit Senior\nTax Reviewer\nAudit Staff"
   },
   {
    "fieldname": "duration_days",
@@ -99,13 +101,25 @@
    "ignore_user_permissions": 1,
    "label": "Parent Audit Task Template",
    "options": "Audit Task Template"
+  },
+  {
+   "fieldname": "approval_level",
+   "fieldtype": "Select",
+   "label": "Approval Level",
+   "options": "Audit Manager\nEngagement Partner\nEngagement Manager\nAudit Senior\nTax Reviewer"
+  },
+  {
+   "fieldname": "order",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Order"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2025-04-11 18:19:50.006208",
+ "modified": "2025-04-11 21:43:05.131534",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "Audit Task Template",
@@ -122,6 +136,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "AMT Admin",
    "share": 1,
    "write": 1
   }
