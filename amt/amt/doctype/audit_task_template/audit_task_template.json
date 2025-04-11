@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "autoincrement",
+ "autoname": "format:{task_name}",
  "creation": "2025-04-11 10:31:09.450127",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -13,7 +13,12 @@
   "assigned_role",
   "weight",
   "column_break_sdzg",
-  "description"
+  "description",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_audit_task_template"
  ],
  "fields": [
   {
@@ -59,16 +64,52 @@
    "fieldname": "weight",
    "fieldtype": "Data",
    "label": "Weight"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Audit Task Template"
+  },
+  {
+   "fieldname": "parent_audit_task_template",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Parent Audit Task Template",
+   "options": "Audit Task Template"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_tree": 1,
  "links": [],
- "modified": "2025-04-11 14:36:54.534496",
+ "modified": "2025-04-11 18:19:50.006208",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "Audit Task Template",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression",
  "nsm_parent_field": "parent_audit_task_template",
  "owner": "Administrator",
  "permissions": [

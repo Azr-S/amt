@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "audit_task",
+  "audit_stage",
   "column_break_plmt",
   "responsible_person",
   "column_break_pdal",
@@ -51,13 +52,20 @@
   {
    "fieldname": "column_break_pdal",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "audit_task.parent_audit_task_template",
+   "fieldname": "audit_stage",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Audit Stage"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-04-11 13:45:17.885447",
+ "modified": "2025-04-11 17:56:36.215168",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "Audit Tasks Under Audit Stage",

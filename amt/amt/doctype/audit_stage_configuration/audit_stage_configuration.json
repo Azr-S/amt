@@ -13,8 +13,8 @@
   "column_break_rrzr",
   "industry",
   "is_active",
-  "section_break_zsef",
-  "audit_stage"
+  "audit_tasks_section",
+  "audit_tasks_child_table"
  ],
  "fields": [
   {
@@ -58,21 +58,21 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_zsef",
-   "fieldtype": "Section Break"
+   "fieldname": "audit_tasks_section",
+   "fieldtype": "Section Break",
+   "label": "Audit Tasks"
   },
   {
-   "fieldname": "audit_stage",
+   "fieldname": "audit_tasks_child_table",
    "fieldtype": "Table",
-   "label": "Audit Stage",
-   "options": "Audit Stages Under Configuration"
+   "options": "Audit Tasks Under Audit Stage"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-04-11 13:52:05.654170",
+ "modified": "2025-04-11 17:57:29.253341",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "Audit Stage Configuration",

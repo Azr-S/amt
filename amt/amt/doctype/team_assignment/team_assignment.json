@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "{engagement}-{engagement}",
  "creation": "2025-04-10 21:47:28.031403",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -48,7 +49,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-10 22:11:27.237524",
+ "modified": "2025-04-11 17:41:31.868041",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "Team Assignment",

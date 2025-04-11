@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{task_name}-{audit_engagement}-{##}",
  "creation": "2025-04-11 14:23:09.252747",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -87,6 +88,7 @@
   {
    "fieldname": "audit_engagement",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Audit Engagement",
    "options": "Audit Engagement"
   },
@@ -94,6 +96,7 @@
    "fetch_from": "audit_engagement.audit_client",
    "fieldname": "client",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Client",
    "options": "Audit Client"
   },
@@ -155,10 +158,11 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-04-11 14:43:31.947928",
+ "modified": "2025-04-11 19:00:03.673487",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "Audit Task",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

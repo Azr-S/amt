@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{audit_client}-{financial_year}",
  "creation": "2025-04-10 21:35:49.782319",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -117,10 +118,11 @@
    "link_fieldname": "audit_engagement"
   }
  ],
- "modified": "2025-04-11 14:39:38.225500",
+ "modified": "2025-04-11 15:18:03.465972",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "Audit Engagement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -140,6 +142,7 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "audit_client",
  "track_changes": 1,
  "track_seen": 1
 }
