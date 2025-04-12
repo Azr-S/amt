@@ -29,6 +29,10 @@ fixtures = [
             "Tax Reviewer",
             "Audit Staff"
         ]]]
+    },
+    {
+        "doctype": "Workspace",
+        "filters": [["name", "=", "Qatar Audit Management"]]
     }
 ]
 

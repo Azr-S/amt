@@ -100,6 +100,7 @@
    "fieldname": "audit_configuration",
    "fieldtype": "Link",
    "label": "Audit Configuration",
+   "link_filters": "[[\"Audit Stage Configuration\",\"docstatus\",\"=\",\"1\"]]",
    "options": "Audit Stage Configuration"
   },
   {
@@ -132,15 +133,11 @@
  "is_submittable": 1,
  "links": [
   {
-   "link_doctype": "Team Assignment",
-   "link_fieldname": "engagement"
-  },
-  {
    "link_doctype": "Audit Task",
    "link_fieldname": "audit_engagement"
   }
  ],
- "modified": "2025-04-12 03:25:11.333964",
+ "modified": "2025-04-12 04:56:31.171476",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "Audit Engagement",

@@ -1,0 +1,226 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"8Sjacu3le_\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Qatar Audit Managementac</span>\",\"col\":12}},{\"id\":\"ZxAegBvwZW\",\"type\":\"paragraph\",\"data\":{\"text\":\"Action &amp; Report\",\"col\":12}},{\"id\":\"fbDQ9sV_hE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Pending Partner Approval\",\"col\":3}},{\"id\":\"gf9c6DNHof\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Pending Manager Approval\",\"col\":3}},{\"id\":\"KXvKJg_hWd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Pending Review\",\"col\":3}},{\"id\":\"odIF80Sp6L\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Work In Progress\",\"col\":3}},{\"id\":\"OwPfl8iX9g\",\"type\":\"paragraph\",\"data\":{\"text\":\"Documents &amp; Workflows\",\"col\":12}},{\"id\":\"pBfdos22V6\",\"type\":\"card\",\"data\":{\"card_name\":\"Customer\",\"col\":4}},{\"id\":\"JbiCRi_n2A\",\"type\":\"card\",\"data\":{\"card_name\":\"Work\",\"col\":4}},{\"id\":\"VIG-tUSqB2\",\"type\":\"card\",\"data\":{\"card_name\":\"Admin\",\"col\":4}},{\"id\":\"fCTed9-Z2x\",\"type\":\"card\",\"data\":{\"card_name\":\"Other\",\"col\":4}}]",
+ "creation": "2025-04-12 04:40:42.507972",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "permission",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Qatar Audit Management",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Audit Client",
+   "link_count": 0,
+   "link_to": "Audit Client",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Audit Engagement",
+   "link_count": 0,
+   "link_to": "Audit Engagement",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "KYC",
+   "link_count": 0,
+   "link_to": "KYC",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Admin",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Audit Task Template",
+   "link_count": 0,
+   "link_to": "Audit Task Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Audit Roles",
+   "link_count": 0,
+   "link_to": "Audit Roles",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Audit Stage Configuration",
+   "link_count": 0,
+   "link_to": "Audit Stage Configuration",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Work",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Audit Task",
+   "link_count": 0,
+   "link_to": "Audit Task",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Other",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee",
+   "link_count": 0,
+   "link_to": "Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Role",
+   "link_count": 0,
+   "link_to": "Role",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "File",
+   "link_count": 0,
+   "link_to": "File",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-04-12 04:51:43.990533",
+ "modified_by": "Administrator",
+ "module": "Amt",
+ "name": "Qatar Audit Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Engagement Manager"
+  },
+  {
+   "role": "Engagement Partner"
+  },
+  {
+   "role": "Audit Senior"
+  },
+  {
+   "role": "Audit Staff"
+  },
+  {
+   "role": "Audit Manager"
+  }
+ ],
+ "sequence_id": 44.0,
+ "shortcuts": [
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Pending Partner Approval",
+   "link_to": "Audit Task",
+   "stats_filter": "[[\"Audit Task\",\"workflow_state\",\"=\",\"Manager Approved\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Pending Manager Approval",
+   "link_to": "Audit Task",
+   "stats_filter": "[[\"Audit Task\",\"workflow_state\",\"=\",\"Reviewed\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Pending Review",
+   "link_to": "Audit Task",
+   "stats_filter": "[[\"Audit Task\",\"workflow_state\",\"=\",\"Pending Review\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Work In Progress",
+   "link_to": "Audit Task",
+   "stats_filter": "[[\"Audit Task\",\"workflow_state\",\"=\",\"Work In Progress\",false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Qatar Audit Management"
+}
