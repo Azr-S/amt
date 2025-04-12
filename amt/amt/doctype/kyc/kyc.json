@@ -108,48 +108,41 @@
    "fieldname": "legal_entity_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Legal Entity Name",
-   "reqd": 1
+   "label": "Legal Entity Name"
   },
   {
    "fieldname": "trade_license_number_cl_number",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Trade License Number (CL Number)",
-   "reqd": 1
+   "label": "Trade License Number (CL Number)"
   },
   {
    "fieldname": "commercial_registration_cr_number",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Commercial Registration (CR) Number",
-   "reqd": 1
+   "label": "Commercial Registration (CR) Number"
   },
   {
    "fieldname": "tax_identification_number_tin",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Tax Identification Number (TIN)",
-   "reqd": 1
+   "label": "Tax Identification Number (TIN)"
   },
   {
    "fieldname": "entity_type",
    "fieldtype": "Data",
-   "label": "Entity Type",
-   "reqd": 1
+   "label": "Entity Type"
   },
   {
    "fieldname": "date_of_incorporation",
    "fieldtype": "Date",
-   "label": "Date of Incorporation",
-   "reqd": 1
+   "label": "Date of Incorporation"
   },
   {
    "fieldname": "country_of_incorporation",
    "fieldtype": "Link",
    "label": "Country of Incorporation",
-   "options": "Country",
-   "reqd": 1
+   "options": "Country"
   },
   {
    "fieldname": "column_break_dmhh",
@@ -158,8 +151,7 @@
   {
    "fieldname": "registered_address",
    "fieldtype": "Small Text",
-   "label": "Registered Address",
-   "reqd": 1
+   "label": "Registered Address"
   },
   {
    "fieldname": "mailing_address",
@@ -169,20 +161,17 @@
   {
    "fieldname": "primary_contact_person",
    "fieldtype": "Data",
-   "label": "Primary Contact Person",
-   "reqd": 1
+   "label": "Primary Contact Person"
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email",
-   "reqd": 1
+   "label": "Email"
   },
   {
    "fieldname": "contact_number",
    "fieldtype": "Data",
-   "label": "Contact Number",
-   "reqd": 1
+   "label": "Contact Number"
   },
   {
    "fieldname": "ownership_and_control_structure_section",
@@ -222,8 +211,7 @@
   {
    "fieldname": "trade_license_validity",
    "fieldtype": "Date",
-   "label": "Trade License Validity",
-   "reqd": 1
+   "label": "Trade License Validity"
   },
   {
    "fieldname": "aml_compliance_officer",
@@ -243,20 +231,17 @@
   {
    "fieldname": "trade_license",
    "fieldtype": "Attach",
-   "label": "Trade License",
-   "reqd": 1
+   "label": "Trade License"
   },
   {
    "fieldname": "cr_document",
    "fieldtype": "Attach",
-   "label": "CR Document",
-   "reqd": 1
+   "label": "CR Document"
   },
   {
    "fieldname": "tax_card",
    "fieldtype": "Attach",
-   "label": "Tax Card",
-   "reqd": 1
+   "label": "Tax Card"
   },
   {
    "default": "0",
@@ -268,8 +253,7 @@
    "fieldname": "applicable_regulator",
    "fieldtype": "Select",
    "label": "Applicable Regulator",
-   "options": "QFMA\nQFC\nMOCI\nQFZ\nQSTP\nOther",
-   "reqd": 1
+   "options": "QFMA\nQFC\nMOCI\nQFZ\nQSTP\nOther"
   },
   {
    "fieldname": "banking_and_financial_info_section",
@@ -279,8 +263,7 @@
   {
    "fieldname": "primary_bank_name",
    "fieldtype": "Data",
-   "label": "Primary Bank Name",
-   "reqd": 1
+   "label": "Primary Bank Name"
   },
   {
    "fieldname": "iban__account_number",
@@ -291,15 +274,13 @@
    "fieldname": "bank_country",
    "fieldtype": "Link",
    "label": "Bank Country",
-   "options": "Country",
-   "reqd": 1
+   "options": "Country"
   },
   {
    "fieldname": "currency_of_fs",
    "fieldtype": "Link",
    "label": "Currency of FS",
-   "options": "Currency",
-   "reqd": 1
+   "options": "Currency"
   },
   {
    "fieldname": "column_break_fuhx",
@@ -308,8 +289,7 @@
   {
    "fieldname": "name_of_external_auditor",
    "fieldtype": "Data",
-   "label": "Name of External Auditor",
-   "reqd": 1
+   "label": "Name of External Auditor"
   },
   {
    "fieldname": "date_of_last_audit",
@@ -515,7 +495,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-04-11 20:12:20.805413",
+ "modified": "2025-04-12 16:49:10.719654",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "KYC",
