@@ -173,15 +173,17 @@
   {
    "fetch_from": "task_name.order",
    "fieldname": "order",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "hidden": 1,
    "label": "Order"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "task_status",
    "fieldtype": "Select",
    "label": "Task Status",
-   "options": "Work In Progress\nPrepared\nReviewed\nApproved"
+   "options": "Work In Progress\nPrepared\nReviewed\nApproved",
+   "read_only": 1
   },
   {
    "fieldname": "approval_level_for_kanban",
@@ -201,15 +203,14 @@
   {
    "fieldname": "assigned_to",
    "fieldtype": "Data",
-   "label": "Assigned to",
-   "options": "User"
+   "label": "Assigned to"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-04-12 04:29:04.370422",
+ "modified": "2025-04-12 18:52:15.596723",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "Audit Task",
@@ -304,7 +305,7 @@
  ],
  "row_format": "Dynamic",
  "show_title_field_in_link": 1,
- "sort_field": "modified",
+ "sort_field": "order",
  "sort_order": "DESC",
  "states": [],
  "title_field": "task_name",
