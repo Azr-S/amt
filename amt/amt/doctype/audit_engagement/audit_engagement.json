@@ -19,6 +19,9 @@
   "proposal",
   "engagement_letter",
   "scope_of_audit",
+  "completion_percentage",
+  "audit_team_section",
+  "team_assignment",
   "admin_section",
   "audit_configuration"
  ],
@@ -103,6 +106,25 @@
    "fieldname": "financial_year",
    "fieldtype": "Data",
    "label": "Financial Year"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "completion_percentage",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Completion Percentage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "audit_team_section",
+   "fieldtype": "Section Break",
+   "label": "Audit Team"
+  },
+  {
+   "fieldname": "team_assignment",
+   "fieldtype": "Table",
+   "label": "Team Assignment",
+   "options": "Audit Team"
   }
  ],
  "grid_page_length": 50,
@@ -118,7 +140,7 @@
    "link_fieldname": "audit_engagement"
   }
  ],
- "modified": "2025-04-11 21:36:16.628833",
+ "modified": "2025-04-12 03:25:11.333964",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "Audit Engagement",

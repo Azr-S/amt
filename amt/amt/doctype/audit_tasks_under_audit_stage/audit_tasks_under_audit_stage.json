@@ -7,9 +7,10 @@
  "engine": "InnoDB",
  "field_order": [
   "audit_task",
+  "weight",
   "audit_stage",
   "column_break_plmt",
-  "responsible_person",
+  "responsible_role",
   "column_break_pdal",
   "description",
   "critical_path"
@@ -21,14 +22,6 @@
    "in_list_view": 1,
    "label": "Audit Task",
    "options": "Audit Task Template"
-  },
-  {
-   "fetch_from": "audit_task.assigned_role",
-   "fieldname": "responsible_person",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Responsible Person"
   },
   {
    "fetch_from": "audit_task.description",
@@ -59,13 +52,27 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Audit Stage"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Weight %",
+   "precision": "0"
+  },
+  {
+   "fetch_from": "audit_task.assigned_role",
+   "fieldname": "responsible_role",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Responsible Role"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-04-11 17:56:36.215168",
+ "modified": "2025-04-12 04:11:15.425715",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "Audit Tasks Under Audit Stage",

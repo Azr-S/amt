@@ -39,6 +39,15 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
+  "modified": "2025-04-11 21:37:48.732032",
+  "name": "Partner Approved",
+  "style": "Success",
+  "workflow_state_name": "Partner Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
   "modified": "2025-04-11 21:38:35.821817",
   "name": "Reviewed",
   "style": "Warning",
@@ -52,15 +61,6 @@
   "name": "Work In Progress",
   "style": "Primary",
   "workflow_state_name": "Work In Progress"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-04-11 21:37:48.732032",
-  "name": "Partner Approved",
-  "style": "Success",
-  "workflow_state_name": "Partner Approved"
  },
  {
   "docstatus": 0,

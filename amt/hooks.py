@@ -18,6 +18,7 @@ fixtures = [
     },
     "Workflow State",
     "Workflow Action Master",
+    {"doctype": "Kanban Board", "filters": [["reference_doctype", "=", "Audit Task"]]},
     {
         "doctype": "Role",
         "filters": [["name", "in", [
@@ -30,6 +31,7 @@ fixtures = [
         ]]]
     }
 ]
+
 
 
 # required_apps = []

@@ -8,8 +8,11 @@
  "field_order": [
   "engagement_details_section",
   "audit_engagement",
+  "task_status",
   "column_break_vtzz",
   "client",
+  "approval_level_for_kanban",
+  "weight_",
   "task_details_section",
   "task_name",
   "responsible_role",
@@ -20,6 +23,7 @@
   "description",
   "standard_duration_days",
   "amended_from",
+  "assigned_to",
   "work_updates_section",
   "expected_start_date",
   "expected_end_date",
@@ -45,6 +49,7 @@
   {
    "fieldname": "task_name",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Task Name",
    "options": "Audit Task Template"
   },
@@ -52,6 +57,7 @@
    "fetch_from": "task_name.assigned_role",
    "fieldname": "responsible_role",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Responsible Role"
   },
   {
@@ -91,6 +97,7 @@
    "fieldname": "audit_engagement",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Audit Engagement",
    "options": "Audit Engagement"
   },
@@ -99,6 +106,7 @@
    "fieldname": "client",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Client",
    "options": "Audit Client"
   },
@@ -159,20 +167,49 @@
    "fetch_from": "task_name.approval_level",
    "fieldname": "approval_level",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Approval Level"
   },
   {
    "fetch_from": "task_name.order",
    "fieldname": "order",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Order"
+  },
+  {
+   "fieldname": "task_status",
+   "fieldtype": "Select",
+   "label": "Task Status",
+   "options": "Work In Progress\nPrepared\nReviewed\nApproved"
+  },
+  {
+   "fieldname": "approval_level_for_kanban",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Approval",
+   "options": "Work In Progress\nPending Review\nReviewed\nManager Approved\nPartner Approved"
+  },
+  {
+   "fieldname": "weight_",
+   "fieldtype": "Percent",
+   "label": "Weight %",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Data",
+   "label": "Assigned to",
+   "options": "User"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-04-11 21:43:42.520126",
+ "modified": "2025-04-12 04:29:04.370422",
  "modified_by": "Administrator",
  "module": "Amt",
  "name": "Audit Task",
@@ -266,9 +303,11 @@
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "task_name",
  "track_changes": 1,
  "track_seen": 1
 }

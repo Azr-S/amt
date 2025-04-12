@@ -1,0 +1,113 @@
+[
+ {
+  "columns": [
+   {
+    "column_name": "Work In Progress",
+    "indicator": "Orange",
+    "order": "[\"Debrief & Planning-Grant Plastics Ltd.-05-2024-99\", \"Archive Files-Grant Plastics Ltd.-05-2024-98\", \"Tax Return Review-Grant Plastics Ltd.-05-2024-97\", \"Sign Off-Grant Plastics Ltd.-05-2024-96\", \"Exit Meeting-Grant Plastics Ltd.-05-2024-95\", \"Prepare Audit Findings-Grant Plastics Ltd.-05-2024-94\", \"Deferred Tax Review-Grant Plastics Ltd.-05-2024-93\", \"Tax Computation-Grant Plastics Ltd.-05-2024-92\", \"Provisions & Liabilities-Grant Plastics Ltd.-05-2024-91\", \"Related Party Transactions-Grant Plastics Ltd.-05-2024-90\", \"Withholding Tax-Grant Plastics Ltd.-05-2024-89\", \"Payroll & Wages-Grant Plastics Ltd.-05-2024-88\", \"Depreciation Review-Grant Plastics Ltd.-05-2024-87\", \"Expense Review-Grant Plastics Ltd.-05-2024-86\", \"Revenue Verification-Grant Plastics Ltd.-05-2024-85\", \"Verify Compliance Environment-Grant Plastics Ltd.-05-2024-84\", \"Initial Analytical Review-Grant Plastics Ltd.-05-2024-83\", \"Send Document Request-Grant Plastics Ltd.-05-2024-82\", \"Preliminary Meeting-Grant Plastics Ltd.-05-2024-81\", \"Debrief & Planning-Grant Plastics Ltd.-05-2020-75\"]",
+    "parent": "Audit Task Status",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "Prepared",
+    "indicator": "Cyan",
+    "order": "[\"Audit Team Assignment-Grant Plastics Ltd.-05-2024-80\", \"Engagement Letter-Grant Plastics Ltd.-05-2024-79\", \"Conflict of Interest & Independence-Grant Plastics Ltd.-05-2024-78\", \"Client Due Diligence-Grant Plastics Ltd.-05-2024-77\", \"Archive Files-Grant Plastics Ltd.-05-2020-74\"]",
+    "parent": "Audit Task Status",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "Reviewed",
+    "indicator": "Blue",
+    "order": "[]",
+    "parent": "Audit Task Status",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "Approved",
+    "indicator": "Green",
+    "order": "[]",
+    "parent": "Audit Task Status",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Kanban Board",
+  "field_name": "task_status",
+  "fields": "[\"modified_by\",\"modified\",\"approval_level\",\"approval_level_for_kanban\"]",
+  "filters": null,
+  "kanban_board_name": "Audit Task Status",
+  "modified": "2025-04-12 02:59:55.943033",
+  "name": "Audit Task Status",
+  "private": 0,
+  "reference_doctype": "Audit Task",
+  "show_labels": 1
+ },
+ {
+  "columns": [
+   {
+    "column_name": "Work In Progress",
+    "indicator": "Orange",
+    "order": "[\"Debrief & Planning-Grant Plastics Ltd.-05-2020-75\"]",
+    "parent": "Audit Task Approval",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "Pending Review",
+    "indicator": "Blue",
+    "order": "[\"Archive Files-Grant Plastics Ltd.-05-2020-74\"]",
+    "parent": "Audit Task Approval",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "Reviewed",
+    "indicator": "Cyan",
+    "order": "[\"Deferred Tax Review-Grant Plastics Ltd.-05-2024-93\", \"Debrief & Planning-Grant Plastics Ltd.-05-2024-99\", \"Audit Team Assignment-Grant Plastics Ltd.-05-2024-80\", \"Engagement Letter-Grant Plastics Ltd.-05-2024-79\", \"Conflict of Interest & Independence-Grant Plastics Ltd.-05-2024-78\", \"Client Due Diligence-Grant Plastics Ltd.-05-2024-77\"]",
+    "parent": "Audit Task Approval",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "Manager Approved",
+    "indicator": "Light Blue",
+    "order": "[]",
+    "parent": "Audit Task Approval",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "Partner Approved",
+    "indicator": "Green",
+    "order": "[]",
+    "parent": "Audit Task Approval",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Kanban Board",
+  "field_name": "approval_level_for_kanban",
+  "fields": "[\"approval_level\"]",
+  "filters": null,
+  "kanban_board_name": "Audit Task Approval",
+  "modified": "2025-04-12 03:14:24.004086",
+  "name": "Audit Task Approval",
+  "private": 0,
+  "reference_doctype": "Audit Task",
+  "show_labels": 0
+ }
+]
